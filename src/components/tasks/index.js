@@ -33,7 +33,7 @@ const TasksList = () => {
                 setTasks(tasks)
             }
         })()
-    }, [fetchTasks])
+    }, [])
 
     // use a callback to update the tasks list when a task is deleted
     const onDeleteTask = useCallback(async (id) => {
@@ -48,7 +48,7 @@ const TasksList = () => {
             // panic if error while running this action
             console.warn("Error deleting task", e)
         }
-    }, [deleteTask, tasks])
+    }, [tasks])
 
 
     const onToggle = useCallback(async (taskId) => {
@@ -84,7 +84,7 @@ const TasksList = () => {
             console.error("Error updating task", e)
         }
 
-    }, [tasks, updateTask])
+    }, [tasks])
 
     return (
         <div>
