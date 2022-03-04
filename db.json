@@ -4,13 +4,25 @@
       "id": 2,
       "text": "meeting at school",
       "day": "Feb 6th at 1.30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "text": "take test",
       "day": "monday",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "Sing the song",
+      "day": "friday",
+      "reminder": false,
+      "id": 6
+    },
+    {
+      "text": "Goto church",
+      "day": "friday",
+      "reminder": true,
+      "id": 7
     }
   ]
 }
